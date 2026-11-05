@@ -1,31 +1,36 @@
-# Pixel Perfect Prompt
+# AI Doctor Notes
 
-Implement exactly the screenshot and nothing else
+A web application for managing patient information, medical consultations, and clinical notes.
 
-This project was built with [Lovable](https://lovable.dev).
+## Features
+- Patient information management
+- Patient consultation records
+- Medical note creation and editing
+- Audio recording and transcription support
+- Patient search and status tracking
 
-**Live app**: https://pixel-perfect-prompt-68.lovable.app
+## Technologies
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Supabase
 
-## Build with Lovable
+## Installation
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/23490158-3186-4032-a1af-35d4d6de04eb).
+Run:
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+    npm install
 
-## Development
+## Environment Variables
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Create a `.env.local` file and configure:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-The Supabase client in `src/lib/supabase.ts` reads `VITE_SUPABASE_URL` and
-`VITE_SUPABASE_ANON_KEY` from `.env.local`. Keep that file out of version control.
-The existing patient storage and transcription API are unchanged; this client does
-not move data to Supabase by itself.
+Keep your environment file private.
+
+## Run Locally
+
+    npm run dev
