@@ -1,3 +1,13 @@
 frontend/.env.local
 backend/.env
 backend/.env.*
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+**/node_modules/
+**/.output/
+**/.wrangler/
+frontend/out1.txt
